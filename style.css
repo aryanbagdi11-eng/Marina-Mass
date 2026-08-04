@@ -187,6 +187,38 @@ section{ padding:96px 0; }
 .form-submit{ justify-content:center; border:none; cursor:pointer; margin-top:4px; }
 .form-note{ font-size:12px; color:rgba(250,247,242,0.5); text-align:center; }
 
+/* ===== INNER PAGE HERO (About, Blog) ===== */
+.page-hero{ background:var(--navy); color:var(--white); padding:150px 0 64px; }
+.page-hero .eyebrow-light{ color:var(--coral-soft); }
+.page-hero h1{ font-size:clamp(32px,4.6vw,52px); color:var(--white); margin-top:14px; }
+.page-hero p{ color:rgba(250,247,242,0.75); font-size:16px; max-width:600px; margin-top:16px; line-height:1.7; }
+.page-hero-crumb{ font-size:12px; color:rgba(250,247,242,0.5); margin-bottom:16px; }
+.page-hero-crumb a{ color:rgba(250,247,242,0.7); }
+.page-hero-crumb a:hover{ color:var(--coral-soft); }
+
+/* ===== PROSE CONTENT (Blog posts, About) ===== */
+.prose{ max-width:740px; }
+.prose p{ color:var(--stone); font-size:16px; line-height:1.8; margin-bottom:20px; }
+.prose h2{ font-size:24px; margin:40px 0 14px; color:var(--navy); font-family:var(--display); }
+.prose-meta{ display:flex; gap:14px; align-items:center; font-size:12px; color:var(--stone); margin-bottom:6px; text-transform:uppercase; letter-spacing:0.05em; font-weight:700; }
+.prose-meta span{ color:var(--coral); }
+
+/* ===== BLOG GRID ===== */
+.blog-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.blog-card{ background:var(--white); border:1px solid var(--line); border-radius:14px; overflow:hidden; transition:transform .2s ease, box-shadow .2s ease; }
+.blog-card:hover{ transform:translateY(-4px); box-shadow:0 14px 32px rgba(15,46,56,0.1); }
+.blog-card img{ width:100%; height:170px; object-fit:cover; }
+.blog-card-copy{ padding:22px; }
+.blog-card-tag{ font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--coral); margin-bottom:8px; display:block; }
+.blog-card h3{ font-size:17px; color:var(--navy); margin-bottom:8px; }
+.blog-card p{ font-size:13.5px; color:var(--stone); line-height:1.55; margin-bottom:12px; }
+.blog-card-link{ font-size:12.5px; font-weight:700; color:var(--coral); }
+.blog-card-link:hover{ color:#e0512e; }
+
+@media (max-width: 900px){
+  .blog-grid{ grid-template-columns:1fr; }
+}
+
 /* ===== WHATSAPP FLOAT ===== */
 .whatsapp-float{
   position:fixed; right:26px; bottom:26px; z-index:200; width:64px; height:64px;
